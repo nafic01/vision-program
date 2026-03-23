@@ -24,7 +24,7 @@ options = vision.HandLandmarkerOptions(
 )
 detector = vision.HandLandmarker.create_from_options(options)
 
-cap = cv2.VideoCapture(0, cv2.CAP_AVFOUNDATION)
+cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
 
 def main():
     timestamp = 0

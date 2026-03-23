@@ -6,7 +6,7 @@ def run(selected_colour):
 
     print("Object counter with colour:", selected_colour)
 
-    cam = cv2.VideoCapture(0, cv2.CAP_AVFOUNDATION)
+    cam = cv2.VideoCapture(0)  # Change the index if you have multiple cameras or put cv2.AVFOUNDATION for MacOS. For example: cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)
     kernel = np.ones((5, 5), np.uint8)
 
     if not cam.isOpened():
